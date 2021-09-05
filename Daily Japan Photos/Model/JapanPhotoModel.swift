@@ -1,5 +1,5 @@
 //
-//  JapanPhoto.swift
+//  JapanPhotoModel.swift
 //  Daily Japan Photos
 //
 //  Created by Matt Dolan External macOS on 2021-09-05.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct JapanPhoto: Decodable {
+struct JapanPhotoModel: Decodable {
     let hits: [Hit]
 }
 
