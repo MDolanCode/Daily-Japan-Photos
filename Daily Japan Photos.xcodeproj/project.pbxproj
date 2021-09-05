@@ -3,27 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B8EEB6566D06B3642C3610E /* Pods_Daily_Japan_Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9859F3F2650B1CB38BA88F8 /* Pods_Daily_Japan_Photos.framework */; };
 		C97CADB326E54CB100CDA1D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97CADB226E54CB100CDA1D4 /* AppDelegate.swift */; };
 		C97CADB526E54CB100CDA1D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97CADB426E54CB100CDA1D4 /* SceneDelegate.swift */; };
-		C97CADB726E54CB100CDA1D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97CADB626E54CB100CDA1D4 /* ViewController.swift */; };
+		C97CADB726E54CB100CDA1D4 /* DailyJapanPhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97CADB626E54CB100CDA1D4 /* DailyJapanPhotosVC.swift */; };
 		C97CADBA26E54CB100CDA1D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97CADB826E54CB100CDA1D4 /* Main.storyboard */; };
 		C97CADBC26E54CB500CDA1D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C97CADBB26E54CB500CDA1D4 /* Assets.xcassets */; };
 		C97CADBF26E54CB500CDA1D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97CADBD26E54CB500CDA1D4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84F71E84D27DD60C2CE03BD9 /* Pods-Daily Japan Photos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily Japan Photos.debug.xcconfig"; path = "Target Support Files/Pods-Daily Japan Photos/Pods-Daily Japan Photos.debug.xcconfig"; sourceTree = "<group>"; };
+		B9859F3F2650B1CB38BA88F8 /* Pods_Daily_Japan_Photos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Daily_Japan_Photos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97CADAF26E54CB100CDA1D4 /* Daily Japan Photos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Japan Photos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97CADB226E54CB100CDA1D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C97CADB426E54CB100CDA1D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C97CADB626E54CB100CDA1D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C97CADB626E54CB100CDA1D4 /* DailyJapanPhotosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyJapanPhotosVC.swift; sourceTree = "<group>"; };
 		C97CADB926E54CB100CDA1D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C97CADBB26E54CB500CDA1D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C97CADBE26E54CB500CDA1D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C97CADC026E54CB500CDA1D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB29FF5643778F05D37792ED /* Pods-Daily Japan Photos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily Japan Photos.release.xcconfig"; path = "Target Support Files/Pods-Daily Japan Photos/Pods-Daily Japan Photos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B8EEB6566D06B3642C3610E /* Pods_Daily_Japan_Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042D8C8C5A285FDC0AD3EA45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9859F3F2650B1CB38BA88F8 /* Pods_Daily_Japan_Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9952A88E9E589A1B593FBC68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84F71E84D27DD60C2CE03BD9 /* Pods-Daily Japan Photos.debug.xcconfig */,
+				DB29FF5643778F05D37792ED /* Pods-Daily Japan Photos.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C97CADA626E54CB100CDA1D4 = {
 			isa = PBXGroup;
 			children = (
 				C97CADB126E54CB100CDA1D4 /* Daily Japan Photos */,
 				C97CADB026E54CB100CDA1D4 /* Products */,
+				9952A88E9E589A1B593FBC68 /* Pods */,
+				042D8C8C5A285FDC0AD3EA45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +82,7 @@
 			children = (
 				C97CADB226E54CB100CDA1D4 /* AppDelegate.swift */,
 				C97CADB426E54CB100CDA1D4 /* SceneDelegate.swift */,
-				C97CADB626E54CB100CDA1D4 /* ViewController.swift */,
+				C97CADB626E54CB100CDA1D4 /* DailyJapanPhotosVC.swift */,
 				C97CADB826E54CB100CDA1D4 /* Main.storyboard */,
 				C97CADBB26E54CB500CDA1D4 /* Assets.xcassets */,
 				C97CADBD26E54CB500CDA1D4 /* LaunchScreen.storyboard */,
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C97CADC326E54CB500CDA1D4 /* Build configuration list for PBXNativeTarget "Daily Japan Photos" */;
 			buildPhases = (
+				4E8146466BE76662EA386C1A /* [CP] Check Pods Manifest.lock */,
 				C97CADAB26E54CB100CDA1D4 /* Sources */,
 				C97CADAC26E54CB100CDA1D4 /* Frameworks */,
 				C97CADAD26E54CB100CDA1D4 /* Resources */,
+				11FB0CDA09BCA8326CB6725A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +158,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11FB0CDA09BCA8326CB6725A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Daily Japan Photos/Pods-Daily Japan Photos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Daily Japan Photos/Pods-Daily Japan Photos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Daily Japan Photos/Pods-Daily Japan Photos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E8146466BE76662EA386C1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Daily Japan Photos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C97CADAB26E54CB100CDA1D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C97CADB726E54CB100CDA1D4 /* ViewController.swift in Sources */,
+				C97CADB726E54CB100CDA1D4 /* DailyJapanPhotosVC.swift in Sources */,
 				C97CADB326E54CB100CDA1D4 /* AppDelegate.swift in Sources */,
 				C97CADB526E54CB100CDA1D4 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +351,7 @@
 		};
 		C97CADC426E54CB500CDA1D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84F71E84D27DD60C2CE03BD9 /* Pods-Daily Japan Photos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +371,7 @@
 		};
 		C97CADC526E54CB500CDA1D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB29FF5643778F05D37792ED /* Pods-Daily Japan Photos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
