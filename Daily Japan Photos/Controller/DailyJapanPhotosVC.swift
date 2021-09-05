@@ -10,6 +10,8 @@ import Alamofire
 
 class DailyJapanPhotosVC: UIViewController {
     
+    @IBOutlet var tableView: UITableView!
+    
     let url = "https://pixabay.com/api/?key=23250900-37b6c2e019e67545c2686f55c&q=japan&image_type=photo"
     
     let japanPhoto: [JapanPhoto] = []
