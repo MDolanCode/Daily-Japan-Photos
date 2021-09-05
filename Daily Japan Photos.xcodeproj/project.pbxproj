@@ -15,6 +15,8 @@
 		C97CADBC26E54CB500CDA1D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C97CADBB26E54CB500CDA1D4 /* Assets.xcassets */; };
 		C97CADBF26E54CB500CDA1D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97CADBD26E54CB500CDA1D4 /* LaunchScreen.storyboard */; };
 		C9F84A0926E55C8C00327E80 /* JapanPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F84A0826E55C8C00327E80 /* JapanPhoto.swift */; };
+		C9F84A1126E55F6100327E80 /* DailyJapanPhotosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F84A0F26E55F6100327E80 /* DailyJapanPhotosTVC.swift */; };
+		C9F84A1226E55F6100327E80 /* DailyJapanPhotosTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9F84A1026E55F6100327E80 /* DailyJapanPhotosTVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		C97CADBE26E54CB500CDA1D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C97CADC026E54CB500CDA1D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9F84A0826E55C8C00327E80 /* JapanPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanPhoto.swift; sourceTree = "<group>"; };
+		C9F84A0F26E55F6100327E80 /* DailyJapanPhotosTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyJapanPhotosTVC.swift; sourceTree = "<group>"; };
+		C9F84A1026E55F6100327E80 /* DailyJapanPhotosTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyJapanPhotosTVC.xib; sourceTree = "<group>"; };
 		DB29FF5643778F05D37792ED /* Pods-Daily Japan Photos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily Japan Photos.release.xcconfig"; path = "Target Support Files/Pods-Daily Japan Photos/Pods-Daily Japan Photos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,11 +86,11 @@
 		C97CADB126E54CB100CDA1D4 /* Daily Japan Photos */ = {
 			isa = PBXGroup;
 			children = (
-				C9F84A0726E55C7400327E80 /* Model */,
 				C97CADB226E54CB100CDA1D4 /* AppDelegate.swift */,
 				C97CADB426E54CB100CDA1D4 /* SceneDelegate.swift */,
-				C97CADB626E54CB100CDA1D4 /* DailyJapanPhotosVC.swift */,
-				C97CADB826E54CB100CDA1D4 /* Main.storyboard */,
+				C9F84A0726E55C7400327E80 /* Model */,
+				C9F84A0D26E55E7000327E80 /* View */,
+				C9F84A0C26E55E5400327E80 /* Controller */,
 				C97CADBB26E54CB500CDA1D4 /* Assets.xcassets */,
 				C97CADBD26E54CB500CDA1D4 /* LaunchScreen.storyboard */,
 				C97CADC026E54CB500CDA1D4 /* Info.plist */,
@@ -100,6 +104,24 @@
 				C9F84A0826E55C8C00327E80 /* JapanPhoto.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C9F84A0C26E55E5400327E80 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C97CADB626E54CB100CDA1D4 /* DailyJapanPhotosVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C9F84A0D26E55E7000327E80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C97CADB826E54CB100CDA1D4 /* Main.storyboard */,
+				C9F84A0F26E55F6100327E80 /* DailyJapanPhotosTVC.swift */,
+				C9F84A1026E55F6100327E80 /* DailyJapanPhotosTVC.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +186,7 @@
 				C97CADBF26E54CB500CDA1D4 /* LaunchScreen.storyboard in Resources */,
 				C97CADBC26E54CB500CDA1D4 /* Assets.xcassets in Resources */,
 				C97CADBA26E54CB100CDA1D4 /* Main.storyboard in Resources */,
+				C9F84A1226E55F6100327E80 /* DailyJapanPhotosTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +242,7 @@
 				C97CADB726E54CB100CDA1D4 /* DailyJapanPhotosVC.swift in Sources */,
 				C97CADB326E54CB100CDA1D4 /* AppDelegate.swift in Sources */,
 				C97CADB526E54CB100CDA1D4 /* SceneDelegate.swift in Sources */,
+				C9F84A1126E55F6100327E80 /* DailyJapanPhotosTVC.swift in Sources */,
 				C9F84A0926E55C8C00327E80 /* JapanPhoto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
