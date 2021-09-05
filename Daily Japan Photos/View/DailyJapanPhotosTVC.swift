@@ -9,6 +9,14 @@ import UIKit
 
 class DailyJapanPhotosTVC: UITableViewCell {
 
+    @IBOutlet var japanPhotoImageView: UIImageView!
+    
+    static let identifier = "DailyJapanPhotosTVC"
+    
+    static func nib() -> UINib {
+        return UINib(nibName: "DailyJapanPhotosTVC", bundle: nil)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
