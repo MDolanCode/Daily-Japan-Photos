@@ -14,6 +14,7 @@
 		C97CADBA26E54CB100CDA1D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97CADB826E54CB100CDA1D4 /* Main.storyboard */; };
 		C97CADBC26E54CB500CDA1D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C97CADBB26E54CB500CDA1D4 /* Assets.xcassets */; };
 		C97CADBF26E54CB500CDA1D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97CADBD26E54CB500CDA1D4 /* LaunchScreen.storyboard */; };
+		C9F84A0926E55C8C00327E80 /* JapanPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F84A0826E55C8C00327E80 /* JapanPhoto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C97CADBB26E54CB500CDA1D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C97CADBE26E54CB500CDA1D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C97CADC026E54CB500CDA1D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9F84A0826E55C8C00327E80 /* JapanPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanPhoto.swift; sourceTree = "<group>"; };
 		DB29FF5643778F05D37792ED /* Pods-Daily Japan Photos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daily Japan Photos.release.xcconfig"; path = "Target Support Files/Pods-Daily Japan Photos/Pods-Daily Japan Photos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 		C97CADB126E54CB100CDA1D4 /* Daily Japan Photos */ = {
 			isa = PBXGroup;
 			children = (
+				C9F84A0726E55C7400327E80 /* Model */,
 				C97CADB226E54CB100CDA1D4 /* AppDelegate.swift */,
 				C97CADB426E54CB100CDA1D4 /* SceneDelegate.swift */,
 				C97CADB626E54CB100CDA1D4 /* DailyJapanPhotosVC.swift */,
@@ -89,6 +92,14 @@
 				C97CADC026E54CB500CDA1D4 /* Info.plist */,
 			);
 			path = "Daily Japan Photos";
+			sourceTree = "<group>";
+		};
+		C9F84A0726E55C7400327E80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9F84A0826E55C8C00327E80 /* JapanPhoto.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +219,7 @@
 				C97CADB726E54CB100CDA1D4 /* DailyJapanPhotosVC.swift in Sources */,
 				C97CADB326E54CB100CDA1D4 /* AppDelegate.swift in Sources */,
 				C97CADB526E54CB100CDA1D4 /* SceneDelegate.swift in Sources */,
+				C9F84A0926E55C8C00327E80 /* JapanPhoto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
