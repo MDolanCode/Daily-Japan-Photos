@@ -7,10 +7,17 @@
 
 import Foundation
 
+// MARK: - JapanPhotoModel
 struct JapanPhotoModel: Decodable {
+    let total, totalHits: Int
     let hits: [Hit]
 }
 
+// MARK: - Hit
 struct Hit: Decodable {
-    let pageURL: String
+    let largeImageURL: String
+
+    enum CodingKeys: String, CodingKey {
+        case largeImageURL
+    }
 }
