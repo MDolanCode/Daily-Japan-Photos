@@ -14,15 +14,12 @@ class DailyJapanPhotosTVC: UITableViewCell {
     static let identifier = "DailyJapanPhotosTVC"
     
     static func nib() -> UINib {
-        return UINib(nibName: "DailyJapanPhotosTVC", bundle: nil)
+        return UINib(nibName: DailyJapanPhotosTVC.identifier, bundle: nil)
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
+    var configureCell: Hit! {
+        didSet {
+            self.japanPhotoImageView.setImage(imageURL: self.configureCell.largeImageURL)
+        }
     }
 }
