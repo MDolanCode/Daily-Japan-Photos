@@ -33,7 +33,7 @@
             <connections>
                 <outlet property="japanPhotoImageView" destination="Rbn-D0-WmN" id="VnI-q6-jca"/>
             </connections>
-            <point key="canvasLocation" x="-107.97101449275362" y="110.49107142857143"/>
+            <point key="canvasLocation" x="-159" y="33"/>
         </tableViewCell>
     </objects>
 </document>
