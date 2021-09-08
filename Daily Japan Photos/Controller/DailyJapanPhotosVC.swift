@@ -12,35 +12,47 @@ class DailyJapanPhotosVC: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
-    let url = "https://pixabay.com/api/?key=23250900-37b6c2e019e67545c2686f55c&q=japan&image_type=photo"
+    let url = "https://pixabay.com/"
+    let pages = "&per_page=50"
+    let photo = "&q=japan&image_type=photo"
     
-    let japanPhoto: [JapanPhotoModel] = []
+    private var japanPhoto: [Hit] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.register(DailyJapanPhotosTVC.nib(), forHeaderFooterViewReuseIdentifier: DailyJapanPhotosTVC.identifier)
+        tableView.register(DailyJapanPhotosTVC.nib(), forCellReuseIdentifier: DailyJapanPhotosTVC.identifier)
         
-        AF.request(self.url, method: .get).responseDecodable(of: [JapanPhotoModel].self) { (response) in
+        AF.request(self.url + "\(APIKey.pixabayAPIKey)" + "\(pages)" + "\(photo)", method: .get).responseDecodable(of: JapanPhotoModel.self) { [weak self] response in
+            self?.japanPhoto = response.value?.hits ?? []
+            self?.tableView.reloadData()
             debugPrint(response)
         }
     }
 }
 
+// MARK: - UITableViewDelegate
+extension DailyJapanPhotosVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 250
+    }
+}
+
 extension DailyJapanPhotosVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        japanPhoto.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: DailyJapanPhotosTVC.identifier, for: indexPath) as! DailyJapanPhotosTVC
-        
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: DailyJapanPhotosTVC.identifier, for: indexPath) as? DailyJapanPhotosTVC {
+            cell.configureCell = japanPhoto[indexPath.row]
+            return cell
+        }
+        return DailyJapanPhotosTVC()
     }
-    
-    
 }
 
 
